@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="clock-card" id="clockCard">
+
+    <!-- Greeting changes based on time of day -->
+    <p class="greeting" id="greeting">Good Day!</p>
+
+    <!-- Main time display -->
+    <h1 class="time" id="time">00:00:00</h1>
+
+    <!-- Date display -->
+    <p class="date" id="date">Monday, 1 January 2026</p>
+
+    <!-- Buttons row -->
+    <div class="controls">
+      <button id="formatBtn">12 / 24 Hr</button>
+      <button id="themeBtn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Stopwatch section -->
+    <div class="stopwatch">
+      <h2>Stopwatch</h2>
+      <p class="stopwatch-time" id="stopwatchTime">00:00:00</p>
+      <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
