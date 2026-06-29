@@ -1,0 +1,112 @@
+/* ---------- Basic Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  transition: background 0.4s ease;
+}
+
+/* ---------- Dark Mode ---------- */
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* ---------- Clock Card ---------- */
+.clock-card {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: background 0.4s ease, color 0.4s ease;
+  width: 380px;
+}
+
+body.dark .clock-card {
+  background: rgba(20, 20, 30, 0.85);
+  color: #f1f1f1;
+}
+
+/* ---------- Greeting ---------- */
+.greeting {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* ---------- Time ---------- */
+.time {
+  font-size: 56px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* ---------- Date ---------- */
+.date {
+  font-size: 16px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+/* ---------- Buttons ---------- */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #4a6cf7;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #3a56d4;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ---------- Stopwatch ---------- */
+.stopwatch {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+}
+
+body.dark .stopwatch {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stopwatch h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.stopwatch-time {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
